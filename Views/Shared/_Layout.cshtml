@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TaskFlow</title>
+    <link rel="stylesheet" href="~/lib/uikit/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TaskFlow.styles.css" asp-append-version="true" />
+</head>
+<body>
+    @if(ViewContext.RouteData.Values["controller"].ToString() != "Login")
+    {
+        <header>
+            <nav class="uk-navbar-container uk-padding-small">
+                <div uk-navbar>
+                    <a class="uk-logo" asp-controller="Home" asp-action="Index">TaskFlow</a>
+                    <button class="uk-navbar-right" uk-icon="user"></button>
+                </div>
+            </nav>
+        </header>
+    }
+    <div class="container">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/uikit/dist/js/uikit.min.js"></script>
+    <script src="~/lib/uikit/dist/js/uikit-icons.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿@model Tarefa
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="uk-container uk-margin-medium-top">
+    <div class="uk-flex uk-flex-center">
+        <form>
+            <div class="uk-display-inline-block">
+                <label class="uk-form-label uk-display-block" for="form-stacked-text">Título</label>
+                <div class="uk-display-inline-block">
+                    <input class="uk-input" type="text" placeholder="Digite o título da tarefa">
+                </div>
+            </div>
+            <div class="uk-display-inline-block">
+                <label class="uk-form-label uk-display-block" for="form-stacked-text">Data de Vencimento</label>
+                <div class="uk-display-inline-block">
+                    <input class="uk-input" type="date">
+                </div>
+            </div>
+            <button class="uk-button uk-button-secondary" type="submit">NOVA TAREFA</button>
+        </form>
+    </div>
+    <table class="uk-table uk-table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Data de Vencimento</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+</div>

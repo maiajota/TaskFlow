@@ -1,0 +1,4 @@
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background-color: #fff;
+    border-bottom: 1px solid #d9d9d9;
+}
