@@ -1,4 +1,4 @@
-﻿@model Tarefa
+﻿@model CadastroTarefaViewModel
 
 @{
     ViewData["Title"] = "Home Page";
@@ -6,21 +6,36 @@
 
 <div class="uk-container uk-margin-medium-top">
     <div class="uk-flex uk-flex-center">
-        <form>
+        <form asp-controller="Home" asp-action="CadastrarTarefa" id="formulario-cadastro-tarefa" method="POST">
             <div class="uk-display-inline-block">
                 <label class="uk-form-label uk-display-block" for="form-stacked-text">Título</label>
                 <div class="uk-display-inline-block">
-                    <input class="uk-input" type="text" placeholder="Digite o título da tarefa">
+                    <input class="uk-input" type="text" asp-for="Nome" placeholder="Digite o título da tarefa" required>
                 </div>
             </div>
             <div class="uk-display-inline-block">
                 <label class="uk-form-label uk-display-block" for="form-stacked-text">Data de Vencimento</label>
                 <div class="uk-display-inline-block">
-                    <input class="uk-input" type="date">
+                    <input class="uk-input" type="date" id="input-data-vencimento" value="" asp-for="DataVencimento" required>
                 </div>
             </div>
             <button class="uk-button uk-button-secondary" type="submit">NOVA TAREFA</button>
         </form>
+    </div>
+    <div class="uk-flex uk-margin-medium-top uk-grid-medium uk-flex-middle">
+        <h2 class="uk-margin-remove-bottom">Tarefas</h2>
+        <div>
+            <form class="uk-search uk-search-default">
+                <input class="uk-search-input" id="input-filtro" type="search" placeholder="Filtrar nome das tarefas...">
+                <span class="uk-search-icon-flip" uk-search-icon></span>
+            </form>
+        </div>
+        <div>
+            <label>
+                <input class="uk-checkbox" id="checkbox-urgente" type="checkbox" />
+                <span>Exibir apenas urgentes</span>
+            </label>
+        </div>
     </div>
     <table class="uk-table uk-table-striped">
         <thead>
@@ -31,7 +46,18 @@
             </tr>
         </thead>
         <tbody>
-           
+            @foreach(var tarefa in Model.Tarefas)
+            {
+                <tr>
+                    <td>@tarefa.Nome</td>
+                    <td>@tarefa.DataVencimento.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        <form asp-controller="Home" asp-action="ExcluirTarefa" asp-route-id="@tarefa.Id" method="POST">
+                            <button uk-icon="icon: trash" type="submit"></button>
+                        </form>
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
 </div>

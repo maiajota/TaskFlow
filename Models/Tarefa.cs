@@ -6,6 +6,18 @@ namespace TaskFlow.Models;
 [Table("Tarefa")]
 public class Tarefa
 {
+    public Tarefa(int idUsuario, string nome, DateTime dataVencimento)
+    {
+        IdUsuario = idUsuario;
+        Nome = nome;
+        DataCriacao = DateTime.Now;
+        DataVencimento = dataVencimento;
+    }
+
+    public Tarefa()
+    {
+    }
+
     [Key]
     public int Id { get; set; }
 
