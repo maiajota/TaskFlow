@@ -42,9 +42,12 @@ $("#input-filtro").on("input", function() {
     var textoFiltro = $(this).val().toLowerCase();
 
     $("tbody tr").each(function() {
+
         var nomeTarefa = $(this).children().first().text().toLowerCase();
-        $(this).toggle(nomeTarefa.includes(textoFiltro))
-            
+        if (nomeTarefa.includes(textoFiltro)) 
+            $(this).show();
+        else 
+            $(this).hide();
     })
 })
 
