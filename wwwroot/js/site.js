@@ -23,6 +23,15 @@ function GetDataElemento(textoElemento) {
     return dataFormatada;
 }
 
+$("#input-cadastro-titulo").on("keydown", function(e) {
+    var regex = /^[a-zA-Z]+$/
+
+    if(!regex.test(e.key)) {
+        e.preventDefault();
+    }    
+
+})
+
 $("#formulario-cadastro-tarefa").on("submit", function(e) {
     var textoInputDataVencimento = $("#input-data-vencimento").val();
 
@@ -31,7 +40,7 @@ $("#formulario-cadastro-tarefa").on("submit", function(e) {
         UIkit.notification({
             message: "A data de vencimento não pode ser anterior à data atual.",
             status: 'warning',
-            pos: 'bottom-right',
+            pos: 'bottom-center',
             timeout: 4000
         });
     }
@@ -59,5 +68,22 @@ $("#checkbox-urgente").on("change", function() {
 
         if(GetDataElemento(textoDataVencimento) > dataUrgente) 
             $(this).toggle()
+    })
+})
+
+
+$(".botao-abrir-modal").each(function() {
+    $(this).on("click", function() {
+        var idTarefa = $(this).data("id-tarefa");
+        var nomeTarefa = $(this).parents("tr").find(".nome-tarefa")[0].innerHTML;
+        var dataVencimentoTarefa = $(this).parents("tr").find(".data-vencimento-tarefa")[0].innerHTML;
+
+        var partesData = dataVencimentoTarefa.split("/");
+
+        var dataVencimentoFormatada = partesData[2] + "-" + partesData[1] + "-" + partesData[0];
+        
+        $("#input-id-tarefa").attr("value", idTarefa);
+        $("#input-editar-tarefa-titulo").val(nomeTarefa);
+        $("#input-editar-tarefa-data").val(dataVencimentoFormatada);
     })
 })

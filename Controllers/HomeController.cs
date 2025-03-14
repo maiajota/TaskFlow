@@ -50,6 +50,16 @@ public class HomeController : Controller
         }
     }
 
+    [HttpPost]
+    public async Task<IActionResult> EditarTarefa(int id, string nome, DateTime dataVencimento)
+    {
+        if(!ModelState.IsValid)
+            return RedirectToAction("Index");
+
+        await _tarefaRepository.EditarAsync(id, nome, dataVencimento);
+        return RedirectToAction("Index");
+    }
+
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

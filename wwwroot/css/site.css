@@ -2,3 +2,7 @@
     background-color: #fff;
     border-bottom: 1px solid #d9d9d9;
 }
+
+#container-tabela {
+    height: 500px;
+}

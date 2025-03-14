@@ -27,8 +27,11 @@ public class TarefaRepository : ITarefaRepository
 
    public async Task CadastrarAsync(CadastroTarefaViewModel model)
    {
-        var tarefa = new Tarefa(idUsuario: 1, model.Nome, model.DataVencimento);
+        if(_context.Tarefas.Any(t => t.Nome == model.Nome)) {
+            return;
+        } 
 
+        var tarefa = new Tarefa(idUsuario: 1, model.Nome, model.DataVencimento);
         _context.Tarefas.Add(tarefa);
 
         await _context.SaveChangesAsync();
@@ -42,5 +45,18 @@ public class TarefaRepository : ITarefaRepository
         _context.Tarefas.Remove(tarefa);
 
         await _context.SaveChangesAsync();
+   }
+
+   public async Task EditarAsync(int id, string nome, DateTime dataVencimento)
+   {
+        var tarefa = _context.Tarefas
+            .FirstOrDefault(t => t.Id == id);
+
+        tarefa.Nome = nome;
+        tarefa.DataVencimento = dataVencimento;
+
+        _context.Tarefas.Update(tarefa);
+
+        await _context.SaveChangesAsync();  
    }
 }

@@ -8,4 +8,5 @@ public interface ITarefaRepository
     public IEnumerable<Tarefa> Buscar();
     public Task CadastrarAsync(CadastroTarefaViewModel model);
     public Task ExcluirAsync(int id);
+    public Task EditarAsync(int id,string nome, DateTime dataVencimento);
 }
