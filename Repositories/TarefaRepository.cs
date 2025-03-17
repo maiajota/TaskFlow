@@ -1,7 +1,6 @@
 using TaskFlow.Context;
 using TaskFlow.Models;
 using TaskFlow.Repositories.Interfaces;
-using TaskFlow.ViewModel;
 
 namespace TaskFlow.Repositories;
 
@@ -23,18 +22,28 @@ public class TarefaRepository : ITarefaRepository
                 DataVencimento = t.DataVencimento,
             })
             .OrderBy(t => t.DataVencimento);
-   } 
+   }
 
-   public async Task CadastrarAsync(CadastroTarefaViewModel model)
+   public bool NomeJaExiste(string nome)
    {
-        if(_context.Tarefas.Any(t => t.Nome == model.Nome)) {
-            return;
-        } 
+    if(_context.Tarefas.Any(t => t.Nome == nome))
+        return true;
 
-        var tarefa = new Tarefa(idUsuario: 1, model.Nome, model.DataVencimento);
+    return false;
+   }
+
+   public async Task<bool> CadastrarAsync(string nome, DateTime dataVencimento)
+   {
+        if(NomeJaExiste(nome))
+            return false;
+        
+
+        var tarefa = new Tarefa(idUsuario: 1, nome, dataVencimento);
         _context.Tarefas.Add(tarefa);
 
         await _context.SaveChangesAsync();
+
+        return true;
    }
 
    public async Task ExcluirAsync(int id)

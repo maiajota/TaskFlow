@@ -1,4 +1,4 @@
-﻿@model CadastroTarefaViewModel
+﻿@model IEnumerable<Tarefa>
 
 @{
     ViewData["Title"] = "Home Page";
@@ -13,13 +13,13 @@
             <div class="uk-display-inline-block">
                 <label class="uk-form-label uk-display-block" for="form-stacked-text">Título</label>
                 <div class="uk-display-inline-block">
-                    <input class="uk-input" type="text" asp-for="Nome" id="input-cadastro-titulo" placeholder="Digite o título da tarefa" required>
+                    <input class="uk-input" type="text" name="nome" id="input-cadastro-titulo" placeholder="Digite o título da tarefa" required>
                 </div>
             </div>
             <div class="uk-display-inline-block">
                 <label class="uk-form-label uk-display-block" for="form-stacked-text">Data de Vencimento</label>
                 <div class="uk-display-inline-block">
-                    <input class="uk-input" type="date" id="input-data-vencimento" value="" asp-for="DataVencimento" required>
+                    <input class="uk-input" type="date" id="input-data-vencimento" value="" name="dataVencimento" required>
                 </div>
             </div>
             <button class="uk-button uk-button-secondary" type="submit">NOVA TAREFA</button>
@@ -51,7 +51,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach(var tarefa in Model.Tarefas)
+                @foreach(var tarefa in Model)
                 {
                     <tr>
                         <td class="nome-tarefa">@tarefa.Nome</td>
@@ -91,12 +91,12 @@
         <div class="uk-modal-dialog uk-modal-body">
             <button class="uk-modal-close-default" type="button" uk-close></button>
             <h2 class="uk-modal-title">Editar tarefa</h2>
-            <form asp-controller="Home" asp-action="EditarTarefa" method="POST">
+            <form asp-controller="Home" asp-action="EditarTarefa" method="POST" id="formulario-editar-tarefa">
                 <div class="uk-display-inline-block">
                     <input type="hidden" id="input-id-tarefa" name="id">
                     <label class="uk-form-label uk-display-block">Título</label>
                     <div class="uk-display-inline-block">
-                        <input class="uk-input" type="text" name="nome"id="input-editar-tarefa-titulo" placeholder="Digite o título da tarefa" required>
+                        <input class="uk-input" type="text" name="nome" id="input-editar-tarefa-titulo" placeholder="Digite o título da tarefa" required>
                     </div>
                 </div>
                 <div class="uk-display-inline-block">

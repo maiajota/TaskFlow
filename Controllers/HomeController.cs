@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using TaskFlow.Models;
+using TaskFlow.Models.Enums;
 using TaskFlow.Repositories.Interfaces;
-using TaskFlow.ViewModel;
 
 namespace TaskFlow.Controllers;
 
@@ -18,20 +18,32 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        var tarefaViewModel = new CadastroTarefaViewModel();
-        tarefaViewModel.Tarefas = _tarefaRepository.Buscar();
+        var tarefas = _tarefaRepository.Buscar();
 
-        return View(tarefaViewModel);
+        return View(tarefas);
     }
 
     [HttpPost]
-    public async Task<IActionResult> CadastrarTarefa(CadastroTarefaViewModel model)
+    public async Task<IActionResult> CadastrarTarefa(string nome, DateTime dataVencimento)
     {
         if(!ModelState.IsValid)
-            return View(model);
+            return Json(new { success = StatusEnum.DadosInvalidos, message = "Dados inválidos." });
+
+        var dataAtual = DateTime.Now;
+        var dataAtualFormatada = new DateTime(dataAtual.Year, dataAtual.Month, dataAtual.Day);
+
+        if(dataVencimento < dataAtualFormatada)
+            return Json(new { status = StatusEnum.DataInvalida, message = "A data de vencimento está inválida." });
+
+        if(_tarefaRepository.NomeJaExiste(nome))
+            return Json(new {status = StatusEnum.NomeExistente, message = "O nome da tarefa já existe." });
                 
-        await _tarefaRepository.CadastrarAsync(model);
-        return RedirectToAction("Index");
+        var resultado = await _tarefaRepository.CadastrarAsync(nome, dataVencimento);
+
+        if(!resultado)
+            return Json(new { status = StatusEnum.Erro, message = "Não foi possível cadastrar a tarefa." });
+
+        return Json(new { status = StatusEnum.Sucesso, message = "Tarefa criada com sucesso." });
     }
 
     [HttpPost]
@@ -54,10 +66,14 @@ public class HomeController : Controller
     public async Task<IActionResult> EditarTarefa(int id, string nome, DateTime dataVencimento)
     {
         if(!ModelState.IsValid)
-            return RedirectToAction("Index");
+            return Json(new { success = StatusEnum.DadosInvalidos, message = "Dados inválidos." });
+
+        if(_tarefaRepository.NomeJaExiste(nome))
+            return Json(new { status = StatusEnum.NomeExistente, message = "O nome da tarefa já existe." });
 
         await _tarefaRepository.EditarAsync(id, nome, dataVencimento);
-        return RedirectToAction("Index");
+
+        return Json(new { status = StatusEnum.Sucesso, message = "Tarefa editada com sucesso." });
     }
 
     public IActionResult Error()

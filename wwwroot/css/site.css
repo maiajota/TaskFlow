@@ -6,3 +6,8 @@
 #container-tabela {
     height: 500px;
 }
+
+.uk-notification, .uk-notification-message {
+    background-color: #fff;
+    border: 1px solid #c6c6c6;
+}

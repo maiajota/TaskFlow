@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\TaskFlow.csproj": {}
+    "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\TaskFlow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\TaskFlow.csproj": {
+    "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\TaskFlow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\TaskFlow.csproj",
+        "projectUniqueName": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\TaskFlow.csproj",
         "projectName": "TaskFlow",
-        "projectPath": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\TaskFlow.csproj",
+        "projectPath": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\TaskFlow.csproj",
         "packagesPath": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\obj\\",
+        "outputPath": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\AppData\\Roaming\\NuGet\\NuGet.Config",

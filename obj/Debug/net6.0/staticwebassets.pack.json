@@ -1,99 +1,99 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TaskFlow.bundle.scp.css",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TaskFlow.bundle.scp.css",
       "PackagePath": "staticwebassets\\TaskFlow.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\css\\site.css",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\favicon.ico",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\js\\site.js",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\css\\uikit-rtl.css",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\css\\uikit-rtl.css",
       "PackagePath": "staticwebassets\\lib\\uikit\\dist\\css\\uikit-rtl.css"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\css\\uikit-rtl.min.css",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\css\\uikit-rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\uikit\\dist\\css\\uikit-rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\css\\uikit.css",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\css\\uikit.css",
       "PackagePath": "staticwebassets\\lib\\uikit\\dist\\css\\uikit.css"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\css\\uikit.min.css",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\css\\uikit.min.css",
       "PackagePath": "staticwebassets\\lib\\uikit\\dist\\css\\uikit.min.css"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\js\\uikit-icons.js",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\js\\uikit-icons.js",
       "PackagePath": "staticwebassets\\lib\\uikit\\dist\\js\\uikit-icons.js"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\js\\uikit-icons.min.js",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\js\\uikit-icons.min.js",
       "PackagePath": "staticwebassets\\lib\\uikit\\dist\\js\\uikit-icons.min.js"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\js\\uikit.js",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\js\\uikit.js",
       "PackagePath": "staticwebassets\\lib\\uikit\\dist\\js\\uikit.js"
     },
     {
-      "Id": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\js\\uikit.min.js",
+      "Id": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\js\\uikit.min.js",
       "PackagePath": "staticwebassets\\lib\\uikit\\dist\\js\\uikit.min.js"
     },
     {

@@ -1,12 +1,12 @@
 using TaskFlow.Models;
-using TaskFlow.ViewModel;
 
 namespace TaskFlow.Repositories.Interfaces;
 
 public interface ITarefaRepository
 {
     public IEnumerable<Tarefa> Buscar();
-    public Task CadastrarAsync(CadastroTarefaViewModel model);
+    public bool NomeJaExiste(string nome);
+    public Task<bool> CadastrarAsync(string nome, DateTime dataVencimento);
     public Task ExcluirAsync(int id);
     public Task EditarAsync(int id,string nome, DateTime dataVencimento);
 }

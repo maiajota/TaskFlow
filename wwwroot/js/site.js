@@ -33,18 +33,38 @@ $("#input-cadastro-titulo").on("keydown", function(e) {
 })
 
 $("#formulario-cadastro-tarefa").on("submit", function(e) {
-    var textoInputDataVencimento = $("#input-data-vencimento").val();
+    e.preventDefault();
 
-    if(GetDataElemento(textoInputDataVencimento) < GetDataAtual()) {
-        e.preventDefault()
-        UIkit.notification({
-            message: "A data de vencimento não pode ser anterior à data atual.",
-            status: 'warning',
-            pos: 'bottom-center',
-            timeout: 4000
-        });
-    }
-    
+    var formData = new FormData(this);
+    var nomeTarefa = formData.get("nome");
+    var dataVencimentoTarefa = formData.get("dataVencimento");
+
+    $.ajax({
+        url: '/Home/CadastrarTarefa',
+        type: 'POST',
+        data: {
+            nome: nomeTarefa,
+            dataVencimento: dataVencimentoTarefa
+        },
+        success: function(response) {
+            if(response.status == 0) {
+                    UIkit.notification({
+                        message: response.message,
+                        status: 'success',
+                        pos: 'bottom-center',
+                        timeout: 4000
+                    });
+            }
+            else {
+                UIkit.notification({
+                    message: response.message,
+                    status: 'danger',
+                    pos: 'bottom-center',
+                    timeout: 4000
+                });
+            }
+        }
+    })
 })
 
 $("#input-filtro").on("input", function() {
@@ -83,7 +103,46 @@ $(".botao-abrir-modal").each(function() {
         var dataVencimentoFormatada = partesData[2] + "-" + partesData[1] + "-" + partesData[0];
         
         $("#input-id-tarefa").attr("value", idTarefa);
+        console.log(idTarefa);
+        
         $("#input-editar-tarefa-titulo").val(nomeTarefa);
         $("#input-editar-tarefa-data").val(dataVencimentoFormatada);
+    })
+})
+
+$("#formulario-editar-tarefa").on("submit", function(e) {
+    e.preventDefault();
+
+    var formData = new FormData(this);
+    var id = formData.get("id")
+    var nomeTarefa = formData.get("nome");
+    var dataVencimentoTarefa = formData.get("dataVencimento");
+
+    $.ajax({
+        url: '/Home/EditarTarefa',
+        type: 'POST',
+        data: {
+            id: id,
+            nome: nomeTarefa,
+            dataVencimento: dataVencimentoTarefa
+        },
+        success: function(response) {
+            if(response.status == 0) {
+                    UIkit.notification({
+                        message: response.message,
+                        status: 'success',
+                        pos: 'bottom-center',
+                        timeout: 4000
+                    });
+            }
+            else {
+                UIkit.notification({
+                    message: response.message,
+                    status: 'danger',
+                    pos: 'bottom-center',
+                    timeout: 4000
+                });
+            }
+        }
     })
 })
