@@ -20,6 +20,7 @@ public class TarefaRepository : ITarefaRepository
                 Id = t.Id,
                 Nome = t.Nome,
                 DataVencimento = t.DataVencimento,
+                Urgente = t.Urgente
             })
             .OrderBy(t => t.DataVencimento);
    }
@@ -32,13 +33,12 @@ public class TarefaRepository : ITarefaRepository
     return false;
    }
 
-   public async Task<bool> CadastrarAsync(string nome, DateTime dataVencimento)
+   public async Task<bool> CadastrarAsync(string nome, DateTime dataVencimento, bool urgente)
    {
         if(NomeJaExiste(nome))
             return false;
         
-
-        var tarefa = new Tarefa(idUsuario: 1, nome, dataVencimento);
+        var tarefa = new Tarefa(idUsuario: 1, nome, dataVencimento, urgente);
         _context.Tarefas.Add(tarefa);
 
         await _context.SaveChangesAsync();

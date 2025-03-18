@@ -25,7 +25,7 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> CadastrarTarefa(string nome, DateTime dataVencimento)
+    public async Task<IActionResult> CadastrarTarefa(string nome, DateTime dataVencimento, bool urgente)
     {
         if(!ModelState.IsValid)
             return Json(new { success = StatusEnum.DadosInvalidos, message = "Dados inválidos." });
@@ -39,7 +39,7 @@ public class HomeController : Controller
         if(_tarefaRepository.NomeJaExiste(nome))
             return Json(new {status = StatusEnum.NomeExistente, message = "O nome da tarefa já existe." });
                 
-        var resultado = await _tarefaRepository.CadastrarAsync(nome, dataVencimento);
+        var resultado = await _tarefaRepository.CadastrarAsync(nome, dataVencimento, urgente);
 
         if(!resultado)
             return Json(new { status = StatusEnum.Erro, message = "Não foi possível cadastrar a tarefa." });

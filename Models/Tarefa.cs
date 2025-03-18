@@ -6,12 +6,13 @@ namespace TaskFlow.Models;
 [Table("Tarefa")]
 public class Tarefa
 {
-    public Tarefa(int idUsuario, string nome, DateTime dataVencimento)
+    public Tarefa(int idUsuario, string nome, DateTime dataVencimento, bool urgente)
     {
         IdUsuario = idUsuario;
         Nome = nome;
         DataCriacao = DateTime.Now;
         DataVencimento = dataVencimento;
+        Urgente = urgente;
     }
 
     public Tarefa()
@@ -35,4 +36,8 @@ public class Tarefa
 
     [Required]
     public DateTime DataVencimento { get; set; }
+
+    [Required]
+    [Column(TypeName = "bit")]
+    public bool Urgente { get; set; } = false;
 }

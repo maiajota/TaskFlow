@@ -18,11 +18,11 @@
             <td class="nome-tarefa">@tarefa.Nome</td>
             <td class="data-vencimento-tarefa">@tarefa.DataVencimento.ToString("dd/MM/yyyy")</td>
             <td>
-                @if(tarefa.DataVencimento >= dataAtual && tarefa.DataVencimento <= dataAtual.AddDays(2))
+                @if(@tarefa.Urgente)
                 {
                     <span>Urgente</span>
                 }
-                else if(tarefa.DataVencimento < dataAtual)
+                else if(@tarefa.DataVencimento < dataAtual)
                 {
                     <span>Expirou</span>
                 }

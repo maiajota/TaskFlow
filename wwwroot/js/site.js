@@ -48,13 +48,22 @@ $("#formulario-cadastro-tarefa").on("submit", function(e) {
     var formData = new FormData(this);
     var nomeTarefa = formData.get("nome");
     var dataVencimentoTarefa = formData.get("dataVencimento");
+    var urgente = formData.get("urgente");
 
+    if(urgente == null)
+        urgente = false;
+    else
+        urgente = true;
+
+    console.log(urgente);
+        
     $.ajax({
         url: '/Home/CadastrarTarefa',
         type: 'POST',
         data: {
             nome: nomeTarefa,
-            dataVencimento: dataVencimentoTarefa
+            dataVencimento: dataVencimentoTarefa,
+            urgente: urgente
         },
         success: function(response) {
             if(response.status == 0) {
@@ -87,39 +96,34 @@ $("tbody tr:visible").each(function(index) {
     }
 });
 
-$("#input-filtro").on("input", function() {
-    var textoFiltro = $(this).val().toLowerCase();
-    
+function aplicarFiltros() {
+    var textoFiltro = $("#input-filtro").val().toLowerCase();
+    var statusSelecionado = $("#filtro-status").val().toLowerCase();
+
     $("tbody tr").each(function() {
         var nomeTarefa = $(this).children().first().text().toLowerCase();
-        if (nomeTarefa.includes(textoFiltro)) {
+        var statusTarefa = $(this).children().eq(2).text().toLowerCase().trim();
+        
+        var passouFiltroTexto = nomeTarefa.includes(textoFiltro);
+        var passouFiltroStatus = statusSelecionado === "todos os status" || statusTarefa === statusSelecionado;
+
+        if (passouFiltroTexto && passouFiltroStatus) 
             $(this).show();
-        } else {
+        else
             $(this).hide();
-        }
     });
 
     $("tbody tr:visible").each(function(index) {
         $(this).css('background-color', '');
-        if (index % 2 === 0) {
+        if (index % 2 === 0)
             $(this).addClass('uk-table-striped-row');
-        } else {
+        else
             $(this).removeClass('uk-table-striped-row');
-        }
     });
-});
+}
 
-$("#checkbox-urgente").on("change", function() {
-    $("tbody tr").each(function() {
-        var textoDataVencimento = $(this).children().eq(1)[0].innerText;
-        var dataAtual = getDataAtual();
-        var dataUrgente = new Date(dataAtual.getUTCFullYear(), dataAtual.getUTCMonth(), dataAtual.getDate() + 2);
-
-        if(getDataElemento(textoDataVencimento) < dataAtual || getDataElemento(textoDataVencimento) > dataUrgente) 
-            $(this).toggle()
-    })
-})
-
+$("#input-filtro").on("input", aplicarFiltros);
+$("#filtro-status").on("change", aplicarFiltros);
 
 $(".botao-abrir-modal").each(function() {
     $(this).on("click", function() {

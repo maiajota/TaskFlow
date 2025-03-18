@@ -4,7 +4,6 @@
     ViewData["Title"] = "Home Page";
 
     var dataAtual = DateTime.Today;
-    Console.WriteLine(dataAtual);
 }
 
 <div class="uk-container uk-margin-medium-top">
@@ -22,6 +21,12 @@
                     <input class="uk-input" type="date" id="input-data-vencimento" value="" name="dataVencimento" required>
                 </div>
             </div>
+             <div class="uk-display-inline-block">
+                <label>
+                    <input class="uk-checkbox" name="urgente" type="checkbox" value="true" />
+                    <span>Urgente</span>
+                </label>
+            </div>
             <button class="uk-button uk-button-secondary" type="submit">NOVA TAREFA</button>
         </form>
     </div>
@@ -29,15 +34,17 @@
         <h2 class="uk-margin-remove-bottom">Tarefas</h2>
         <div>
             <form class="uk-search uk-search-default">
-                <input class="uk-search-input" id="input-filtro" type="search" placeholder="Filtrar nome das tarefas...">
+                <input class="uk-search-input" id="input-filtro" type="search" placeholder="Buscar...">
                 <span class="uk-search-icon-flip" uk-search-icon></span>
             </form>
         </div>
         <div>
-            <label>
-                <input class="uk-checkbox" id="checkbox-urgente" type="checkbox" />
-                <span>Exibir apenas urgentes</span>
-            </label>
+            <select class="uk-select" id="filtro-status">
+                <option>Todos os status</option>
+                <option>Normal</option>
+                <option>Expirou</option>
+                <option>Urgente</option>
+            </select>
         </div>
     </div>
     <div class="uk-overflow-auto" id="container-tabela">
