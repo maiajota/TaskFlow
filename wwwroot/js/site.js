@@ -1,4 +1,4 @@
-﻿function GetDataAtual() {
+﻿function getDataAtual() {
     var dataAtual = new Date;
     var ano = dataAtual.getFullYear();
     var mes = (dataAtual.getMonth()).toString().padStart(2, '0');
@@ -7,7 +7,7 @@
     return dataFormatada = new Date(ano, mes, dia);
 }
 
-function GetDataElemento(textoElemento) {
+function getDataElemento(textoElemento) {
     var partesTextoElemento;
     var dataFormatada;
 
@@ -21,6 +21,16 @@ function GetDataElemento(textoElemento) {
     }
 
     return dataFormatada;
+}
+
+function  atualizarTabelaTarefas() {
+    $.ajax({
+        url: '/Home/AtualizarTabelaTarefas',
+        type: 'GET',
+        success: function(html) {
+            $("#tabela-tarefas").html(html)
+        }
+    })
 }
 
 $("#input-cadastro-titulo").on("keydown", function(e) {
@@ -63,30 +73,49 @@ $("#formulario-cadastro-tarefa").on("submit", function(e) {
                     timeout: 4000
                 });
             }
+            atualizarTabelaTarefas();
         }
     })
 })
 
+$("tbody tr:visible").each(function(index) {
+    $(this).css('background-color', '');
+    if (index % 2 === 0) {
+        $(this).addClass('uk-table-striped-row');
+    } else {
+        $(this).removeClass('uk-table-striped-row');
+    }
+});
+
 $("#input-filtro").on("input", function() {
     var textoFiltro = $(this).val().toLowerCase();
-
+    
     $("tbody tr").each(function() {
-
         var nomeTarefa = $(this).children().first().text().toLowerCase();
-        if (nomeTarefa.includes(textoFiltro)) 
+        if (nomeTarefa.includes(textoFiltro)) {
             $(this).show();
-        else 
+        } else {
             $(this).hide();
-    })
-})
+        }
+    });
+
+    $("tbody tr:visible").each(function(index) {
+        $(this).css('background-color', '');
+        if (index % 2 === 0) {
+            $(this).addClass('uk-table-striped-row');
+        } else {
+            $(this).removeClass('uk-table-striped-row');
+        }
+    });
+});
 
 $("#checkbox-urgente").on("change", function() {
     $("tbody tr").each(function() {
         var textoDataVencimento = $(this).children().eq(1)[0].innerText;
-        var dataAtual = GetDataAtual();
+        var dataAtual = getDataAtual();
         var dataUrgente = new Date(dataAtual.getUTCFullYear(), dataAtual.getUTCMonth(), dataAtual.getDate() + 2);
 
-        if(GetDataElemento(textoDataVencimento) > dataUrgente) 
+        if(getDataElemento(textoDataVencimento) < dataAtual || getDataElemento(textoDataVencimento) > dataUrgente) 
             $(this).toggle()
     })
 })
@@ -143,6 +172,7 @@ $("#formulario-editar-tarefa").on("submit", function(e) {
                     timeout: 4000
                 });
             }
+            atualizarTabelaTarefas();
         }
     })
 })

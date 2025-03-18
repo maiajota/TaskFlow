@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CzoGklTk/utjlLBC4Uqh4iWtMTyQ4oPSpT/10v2z0/0=",
+  "Hash": "G06FwjSGe2s9MMbvmML08YfhFIYFmxn1EXOViwQJKo0=",
   "Source": "TaskFlow",
   "BasePath": "_content/TaskFlow",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TaskFlow\\wwwroot",
       "Source": "TaskFlow",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TaskFlow.styles.css",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TaskFlow.styles.css",
       "SourceId": "TaskFlow",
       "SourceType": "Computed",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "TaskFlow.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TaskFlow.styles.css"
+      "OriginalItemSpec": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TaskFlow.styles.css"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TaskFlow.bundle.scp.css",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TaskFlow.bundle.scp.css",
       "SourceId": "TaskFlow",
       "SourceType": "Computed",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "TaskFlow.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TaskFlow.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TaskFlow.bundle.scp.css"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\css\\site.css",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\favicon.ico",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\js\\site.js",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\css\\uikit-rtl.css",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\css\\uikit-rtl.css",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/uikit/dist/css/uikit-rtl.css",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\uikit\\dist\\css\\uikit-rtl.css"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\css\\uikit-rtl.min.css",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\css\\uikit-rtl.min.css",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/uikit/dist/css/uikit-rtl.min.css",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\uikit\\dist\\css\\uikit-rtl.min.css"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\css\\uikit.css",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\css\\uikit.css",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/uikit/dist/css/uikit.css",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\uikit\\dist\\css\\uikit.css"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\css\\uikit.min.css",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\css\\uikit.min.css",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/uikit/dist/css/uikit.min.css",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\uikit\\dist\\css\\uikit.min.css"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\js\\uikit-icons.js",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\js\\uikit-icons.js",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/uikit/dist/js/uikit-icons.js",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\uikit\\dist\\js\\uikit-icons.js"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\js\\uikit-icons.min.js",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\js\\uikit-icons.min.js",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/uikit/dist/js/uikit-icons.min.js",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\uikit\\dist\\js\\uikit-icons.min.js"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\js\\uikit.js",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\js\\uikit.js",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/uikit/dist/js/uikit.js",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\uikit\\dist\\js\\uikit.js"
     },
     {
-      "Identity": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\js\\uikit.min.js",
+      "Identity": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\lib\\uikit\\dist\\js\\uikit.min.js",
       "SourceId": "TaskFlow",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SMN.LAPTOP-UIMVMUHL\\Documents\\Udemy\\TaskFlow\\wwwroot\\",
       "BasePath": "_content/TaskFlow",
       "RelativePath": "lib/uikit/dist/js/uikit.min.js",
       "AssetKind": "All",

@@ -41,50 +41,8 @@
         </div>
     </div>
     <div class="uk-overflow-auto" id="container-tabela">
-        <table class="uk-table uk-table-striped">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Data de Vencimento</th>
-                    <th>Status</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach(var tarefa in Model)
-                {
-                    <tr>
-                        <td class="nome-tarefa">@tarefa.Nome</td>
-                        <td class="data-vencimento-tarefa">@tarefa.DataVencimento.ToString("dd/MM/yyyy")</td>
-                        <td>
-                            @if(tarefa.DataVencimento.AddDays(2) <= dataAtual)
-                            {
-                                <span>Urgente</span>
-                            }
-                            else if(tarefa.DataVencimento < dataAtual)
-                            {
-                                <span>Expirou</span>
-                            }
-                            else
-                            {
-                                <span>Normal</span>
-                            }
-                        </td>
-                        <td class="uk-flex uk-grid-small">
-                            <form asp-controller="Home" asp-action="ExcluirTarefa" asp-route-id="@tarefa.Id" method="POST">
-                                <button uk-icon="icon: trash" type="submit"></button>
-                            </form>
-                            <button
-                                uk-icon="icon: pencil"
-                                type="button"
-                                class="botao-abrir-modal"
-                                data-id-tarefa="@tarefa.Id"
-                                uk-toggle="target: #modal-editar-tarefa">
-                            </button>
-                        </td>
-                    </tr>
-                }
-            </tbody>
+        <table class="uk-table" id="tabela-tarefas">
+            @await Html.PartialAsync("_TabelaTarefas", Model)
         </table>
     </div>
     <div id="modal-editar-tarefa" uk-modal>

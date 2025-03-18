@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Security.Cryptography.X509Certificates;
 using Microsoft.AspNetCore.Mvc;
 using TaskFlow.Models;
 using TaskFlow.Models.Enums;
@@ -74,6 +75,15 @@ public class HomeController : Controller
         await _tarefaRepository.EditarAsync(id, nome, dataVencimento);
 
         return Json(new { status = StatusEnum.Sucesso, message = "Tarefa editada com sucesso." });
+    
+    }
+
+    [HttpGet]
+    public IActionResult AtualizarTabelaTarefas()
+    {
+        var tarefas = _tarefaRepository.Buscar();
+
+        return PartialView("_TabelaTarefas", tarefas);
     }
 
     public IActionResult Error()
