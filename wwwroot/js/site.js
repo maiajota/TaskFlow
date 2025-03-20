@@ -34,13 +34,13 @@ function  atualizarTabelaTarefas() {
 }
 
 $("#input-cadastro-titulo").on("keydown", function(e) {
-    var regex = /^[a-zA-Z]+$/
+    var regex = /^[a-zA-Z\s]+$/;
 
     if(!regex.test(e.key)) {
         e.preventDefault();
     }    
-
 })
+
 
 $("#formulario-cadastro-tarefa").on("submit", function(e) {
     e.preventDefault();
