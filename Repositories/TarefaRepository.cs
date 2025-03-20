@@ -25,12 +25,15 @@ public class TarefaRepository : ITarefaRepository
             .OrderBy(t => t.DataVencimento);
    }
 
-   public bool NomeJaExiste(string nome)
+   public bool NomeJaExiste(string nome, int? id = null)
    {
-    if(_context.Tarefas.Any(t => t.Nome == nome))
-        return true;
+        if(_context.Tarefas.Any(t => 
+            t.Nome == nome &&
+            (!id.HasValue || t.Id != id.Value)
+        ))
+            return true;
 
-    return false;
+        return false;
    }
 
    public async Task<bool> CadastrarAsync(string nome, DateTime dataVencimento, bool urgente)
@@ -56,13 +59,14 @@ public class TarefaRepository : ITarefaRepository
         await _context.SaveChangesAsync();
    }
 
-   public async Task EditarAsync(int id, string nome, DateTime dataVencimento)
+   public async Task EditarAsync(int id, string nome, DateTime dataVencimento, bool urgente)
    {
         var tarefa = _context.Tarefas
             .FirstOrDefault(t => t.Id == id);
 
         tarefa.Nome = nome;
         tarefa.DataVencimento = dataVencimento;
+        tarefa.Urgente = urgente;
 
         _context.Tarefas.Update(tarefa);
 

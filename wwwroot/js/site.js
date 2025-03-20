@@ -55,8 +55,6 @@ $("#formulario-cadastro-tarefa").on("submit", function(e) {
     else
         urgente = true;
 
-    console.log(urgente);
-        
     $.ajax({
         url: '/Home/CadastrarTarefa',
         type: 'POST',
@@ -150,6 +148,12 @@ $("#formulario-editar-tarefa").on("submit", function(e) {
     var id = formData.get("id")
     var nomeTarefa = formData.get("nome");
     var dataVencimentoTarefa = formData.get("dataVencimento");
+    var urgente = formData.get("urgente");
+
+    if(urgente == null)
+        urgente = false;
+    else
+        urgente = true;
 
     $.ajax({
         url: '/Home/EditarTarefa',
@@ -157,7 +161,8 @@ $("#formulario-editar-tarefa").on("submit", function(e) {
         data: {
             id: id,
             nome: nomeTarefa,
-            dataVencimento: dataVencimentoTarefa
+            dataVencimento: dataVencimentoTarefa,
+            urgente: urgente
         },
         success: function(response) {
             if(response.status == 0) {

@@ -64,15 +64,15 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> EditarTarefa(int id, string nome, DateTime dataVencimento)
+    public async Task<IActionResult> EditarTarefa(int id, string nome, DateTime dataVencimento, bool urgente)
     {
         if(!ModelState.IsValid)
             return Json(new { success = StatusEnum.DadosInvalidos, message = "Dados inválidos." });
 
-        if(_tarefaRepository.NomeJaExiste(nome))
+        if(_tarefaRepository.NomeJaExiste(nome, id))
             return Json(new { status = StatusEnum.NomeExistente, message = "O nome da tarefa já existe." });
 
-        await _tarefaRepository.EditarAsync(id, nome, dataVencimento);
+        await _tarefaRepository.EditarAsync(id, nome, dataVencimento, urgente);
 
         return Json(new { status = StatusEnum.Sucesso, message = "Tarefa editada com sucesso." });
     
